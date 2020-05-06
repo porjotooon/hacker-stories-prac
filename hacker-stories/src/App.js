@@ -25,9 +25,8 @@ const list = [
   }
 ]
 
-function App() {
-  
-  return (
+
+const App = () => (
     <div>
       <h1>My Hacker Stories</h1>
 
@@ -39,10 +38,10 @@ function App() {
       <List/>
     </div>
   );
-}
 
-function List(){
-  return list.map(function(item){
+
+const List = () =>
+   list.map(item => {
     return (
       <div key={item.objectID}>
         <span>
@@ -54,6 +53,6 @@ function List(){
       </div>
     );
   });
-}
+
 
 export default App;
